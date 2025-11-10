@@ -1,0 +1,16 @@
+# === BACKEND (Spring Boot) ===
+/backend/target/
+**/*.iml
+/backend/.idea/
+*.log
+*.env
+*.db
+
+# === FRONTEND (React) ===
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+
+# === Sistema / IDE ===
+.DS_Store
+Thumbs.db
