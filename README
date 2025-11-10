@@ -1,0 +1,77 @@
+# TaskFlow
+
+**TaskFlow** es una aplicación **Fullstack** para la gestión de tareas personales.  
+Incluye un **backend en Java Spring Boot** con autenticación JWT y un **frontend en React**, diseñado con una interfaz limpia, moderna y responsive.
+
+---
+
+## Tecnologías principales
+
+### Backend
+- Java 17 + Spring Boot
+- Spring Security + JWT
+- Spring Data JPA
+- MySQL + Docker
+- Maven
+
+### Frontend
+- React + Vite
+- HTML + CSS (diseño responsive)
+- JWT Decode
+
+---
+
+## Funcionalidades clave
+
+✅ Registro e inicio de sesión con JWT  
+✅ CRUD completo de tareas  
+✅ Autorización por usuario (solo el dueño puede editar o eliminar)  
+✅ Manejo global de errores  
+✅ Validaciones backend y frontend  
+✅ Configuración CORS  
+✅ Diseño adaptable a PC, tablets y móviles  
+
+---
+
+## Estructura del proyecto
+TaskFlow/
+├── Backend/ # API REST (Spring Boot + MySQL + JWT)
+└── Frontend/ # Interfaz de usuario (React)
+
+
+---
+
+##  Cómo ejecutar el proyecto
+
+### 1️- Clonar el repositorio
+git clone https://github.com/AlMartinezUy/TaskFlow.git
+cd TaskFlow
+
+### 2- Levantar el backend
+cd Backend
+docker compose up -d
+./mvnw spring-boot:run
+El backend quedará disponible en:
+ http://localhost:8080
+
+### 3- Levantar el frontend
+En otra terminal:
+cd Frontend/taskflow-frontend
+npm install
+npm run dev
+
+El frontend quedará disponible en:
+ http://localhost:5173
+
+ Autor
+
+Alvaro Martínez
+Desarrollador Backend Java
+
+Notas
+
+Este proyecto demuestra la integración completa entre Spring Boot y React,
+aplicando autenticación JWT, validaciones, y buenas prácticas de arquitectura.
+
+
+
